@@ -21,6 +21,5 @@ var reverseString = function(s) {
         left++;
         right--;
     }
-    console.log(s)
 };
 console.log(reverseString( ['h' , 'e' , 'l' , 'l' , 'o']))
