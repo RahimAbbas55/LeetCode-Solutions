@@ -16,17 +16,29 @@
         Output: 1
 */
 var hammingDistance = function(x, y) {
-    let hammingDistance = 0;
-    const binary1 = x.toString(2) , binary2 = y.toString(2);
-    const maxLength = Math.max(binary1 , binary2);
-    const paddedBinary1 = binary1.padStart(maxLength , '0');
-    const paddedBinary2 = binary2.padStart(maxLength , '0');
-    for ( let i = 0 ; i < maxLength ; i++ ){
-        if ( paddedBinary1[i] !== paddedBinary2[i] ){
-            hammingDistance++;
-        }
+    // for smaller numbers
+    //let hammingDistance = 0;
+    //const binary1 = x.toString(2) , binary2 = y.toString(2);
+    //const maxLength = Math.max(binary1 , binary2);
+    //const paddedBinary1 = binary1.padStart(maxLength , '0');
+    //const paddedBinary2 = binary2.padStart(maxLength , '0');
+    //for ( let i = 0 ; i < maxLength ; i++ ){
+      //  if ( paddedBinary1[i] !== paddedBinary2[i] ){
+        //    hammingDistance++;
+        //}
+    //}
+    //return hammingDistance;
+    // for higher numbers
+    let xor = x ^ y;
+    let distance = 0;
+    
+    // Count the number of 1s in the XOR result
+    while (xor > 0) {
+        distance += xor & 1; // Increment if the least significant bit is 1
+        xor = xor >> 1;      // Right-shift to check the next bit
     }
-    return hammingDistance;
+    
+    return distance;
 };
 console.log(hammingDistance(1 , 4));
 console.log(hammingDistance(3 , 1))
