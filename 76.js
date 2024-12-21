@@ -30,7 +30,6 @@ var islandPerimeter = function(grid) {
             }
         }
     }
-
     return perimeter;
 };
 
