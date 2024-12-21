@@ -16,6 +16,7 @@
         Output: 1
 */
 var hammingDistance = function(x, y) {
+<<<<<<< HEAD
     // for smaller numbers
     //let hammingDistance = 0;
     //const binary1 = x.toString(2) , binary2 = y.toString(2);
@@ -29,6 +30,21 @@ var hammingDistance = function(x, y) {
     //}
     //return hammingDistance;
     // for higher numbers
+=======
+    // let hammingDistance = 0;
+    // const binary1 = x.toString(2) , binary2 = y.toString(2);
+    // const maxLength = Math.max(binary1 , binary2);
+    // const paddedBinary1 = binary1.padStart(maxLength , '0');
+    // const paddedBinary2 = binary2.padStart(maxLength , '0');
+    // for ( let i = 0 ; i < maxLength ; i++ ){
+    //     if ( paddedBinary1[i] !== paddedBinary2[i] ){
+    //         hammingDistance++;
+    //     }
+    // }
+    // return hammingDistance;
+
+    // XOR the two numbers to find differing bits
+>>>>>>> ae2c0bc (Leetcode Problem 463 and 461 Fix)
     let xor = x ^ y;
     let distance = 0;
     
