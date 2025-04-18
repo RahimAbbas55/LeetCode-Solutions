@@ -30,7 +30,7 @@ var solution = function(isBadVersion) {
                 right = mid;
             }
             else{
-                left++;
+                left = mid + 1;
             }
         }
         return left;
