@@ -39,10 +39,10 @@ var maxSubsequence = function(nums, k) {
         ->Sort by original index to preserve order
         ->Return values
     */
-   const paired = nums.map( (val , idx) => [val , idx]);
-   paired.sort( (a , b) => b[0] - a[0] );
-   const topK = paired.slice( 0 , k );
-   topK.sort( (a , b) => a[1] - b[1] );
+    const paired = nums.map( (val , idx) => [val , idx]);
+    paired.sort( (a , b) => b[0] - a[0] );
+    const topK = paired.slice( 0 , k );
+    topK.sort( (a , b) => a[1] - b[1] );
     return topK.map(item => item[0]);
     
 };
