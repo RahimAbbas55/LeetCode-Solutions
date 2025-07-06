@@ -27,7 +27,6 @@ var isOneBitCharacter = function(bits) {
         if ( bits[i] === 1 ) i += 2;
         else i += 1;
     }    
-    console.log(i)
     return i === bits.length - 1;
 };
 console.log(isOneBitCharacter([1 , 0 , 0]));
