@@ -42,7 +42,6 @@ var numberOfLines = function (widths, s) {
     let currentWidth = 0;
     for ( let char of s ) {
         let tempCharWidth = widths[char.charCodeAt(0) - 'a'.charCodeAt(0)];
-        console.log(tempCharWidth)
         if ( currentWidth + tempCharWidth > 100 ) {
             lines++;
             currentWidth = tempCharWidth;
