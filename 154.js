@@ -26,9 +26,9 @@
  * @return {number[][]}
  */
 var flipAndInvertImage = function(image) {
-    let reversed = image.map( row => [...row].reverse() );
-    let reversedFlipped = reversed.map( row => row.map( val => val ^ 1 ));
-    return reversedFlipped
+    // let reversed = image.map( row => [...row].reverse() );
+    // let reversedFlipped = reversed.map( row => row.map( val => val ^ 1 ));
+    // return reversedFlipped;
 };
 console.log(flipAndInvertImage([[1,1,0],[1,0,1],[0,0,0]]));
 console.log(flipAndInvertImage([[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]));
