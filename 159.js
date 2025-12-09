@@ -42,7 +42,7 @@ var lemonadeChange = function(bills) {
         else {
             if ( ten > 0 && five > 0){
                 five -= 1;
-                ten -= 10;
+                ten -= 1;
             }
             else if (five >= 3){
                 five -= 3;
