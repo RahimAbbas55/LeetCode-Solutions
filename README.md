@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LeetCode Solutions
 
 Hello everyone, 
@@ -7,3 +8,6 @@ more questions. Hand written notes are also available.
 Currently, there is branch called "Easy-Difficulty" with problems that are categorized as easy. More branches will soon come!
 
 Feel free to check the solutions. Happy Coding😊
+=======
+# Leetcode Medium Difficulty Branch
+>>>>>>> Medium-Difficulty
