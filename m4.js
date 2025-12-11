@@ -47,12 +47,12 @@ var threeSum = function (nums) {
             // Condition reached
             if ( sum === 0 ){
                 result.push([nums[i] , nums[left] , nums[right]]);
-                // update pointers
-                left++;
-                right--;
                 // 2 while loops to check if there are no duplicates after and before of left and right respectively
                 while ( left < right && nums[left] === nums[left + 1] ) left++;
                 while ( left < right && nums[right] === nums[right -1] ) right--;
+                // update pointers
+                left++;
+                right--;
             }
             // decrement right pointer by 1
             else if ( sum > 0 ){
