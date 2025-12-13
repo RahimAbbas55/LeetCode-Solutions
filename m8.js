@@ -28,6 +28,7 @@ var generateParenthesis = function(n) {
             backtrack(openC + 1 , closeC);
             stack.pop();
         }
+        // only add ) parenthesis when closeC count is less than openC
         if ( closeC < openC ){
             stack.push(')');
             backtrack(openC , closeC + 1);
