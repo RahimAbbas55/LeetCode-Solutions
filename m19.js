@@ -26,7 +26,7 @@ var canJump = function(nums) {
     for ( let i = nums.length - 1 ; i >= 0 ; i-- ){
         if ( i + nums[i] >= goal ) goal = i;
     }
-    return (goal === 0)
+    return (goal === 0);
 };
 console.log(canJump([2 , 3 , 1 , 1 , 4]));
 console.log(canJump([3 , 1 , 1 , 0 , 4]));
